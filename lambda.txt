@@ -1,0 +1,21 @@
+
+1. A lambda expression is a short and concise way to represent a single method interface (also known as a functional interface) using an expression. It can be used to create anonymous 
+functions that can be passed as arguments or returned as values. For example, `(x, y) -> x + y` is a lambda expression that represents a function that takes two parameters and returns 
+their sum.
+2. Yes, you can pass lambda expressions to a method as a parameter, as long as the type of the parameter is a functional interface that matches the signature and return type of the 
+lambda expression. This is useful when you want to pass a custom behavior or logic to a method without creating a separate class or interface. For example, you can pass a lambda
+expression to the `forEach()` method of a collection, which takes a `Consumer` functional interface as a parameter. For example, `list.forEach(x -> System.out.println(x));` will print each element of the list using a lambda expression.
+
+3. A functional interface in Java 8 is an interface that has only one abstract method. It can also have default and static methods, but they do not count as abstract methods. A functional
+interface can be annotated with `@FunctionalInterface`, which is optional but helps the compiler to check if the interface is valid. A functional interface can be implemented by a lambda
+expression, a method reference, or an anonymous class. Some examples of functional interfaces are `Predicate`, `Function`, `Consumer`, `Supplier`, etc.
+
+4. We use lambda expressions in Java to achieve functional programming, which is a style of programming that focuses on functions and expressions rather than objects and statements. 
+Lambda expressions make the code more concise, readable, and expressive. They also enable us to use higher-order functions, which are functions that can take other functions as 
+parameters or return them as values. Lambda expressions also support parallel and concurrent programming, as they are stateless and can be easily distributed across multiple threads 
+or processors.
+
+5. No, it is not mandatory for a lambda expression to have parameters. A lambda expression can have zero, one, or more parameters. The parameters are enclosed in parentheses and 
+separated by commas. If there is only one parameter and its type can be inferred from the context, the parentheses can be omitted. For example, `() -> System.out.println("Hello");` 
+is a lambda expression with no parameters, `(x) -> x * x` and `x -> x * x` are equivalent lambda expressions with one parameter, and `(x, y) -> x + y` is a lambda expression with two 
+parameters.
